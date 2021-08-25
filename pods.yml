@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: spring-integration-jenkins
+  labels:
+    app: spring-integration-jenkins
+spec:
+  containers:
+    - name: spring-integration-jenkins
+      image: pranavpm/spring-integration-jenkins:latest
+      ports:
+        - containerPort: 8082
